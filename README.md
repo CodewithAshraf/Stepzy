@@ -1,9 +1,5 @@
 # 👟 Stepzy - Shoes Website
 
-![GitHub stars](https://img.shields.io/github/stars/your-username/stepzy?style=social)
-![GitHub forks](https://img.shields.io/github/forks/your-username/stepzy?style=social)
-![GitHub license](https://img.shields.io/github/license/your-username/stepzy)
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/stepzy)
 
 ---
 
