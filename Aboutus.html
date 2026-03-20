@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="mainNav">
+        <ul class="sidebar" id="sidebar">
+
+
+            <li onclick="hidesidebar()"><i class="fa-solid fa-xmark" style="color: white;"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="#">SignUp</a></li>
+                  <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul>
+
+        <ul>
+
+
+            <li class="hideonmobile"><a href="#">Stepzy</a></li>
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="#">About</a></li>
+            <li class="hideonmobile"><a href="Products.html">Products</a></li>
+            <li class="hideonmobile"><a href="#">SignUp</a></li>
+              <li class="hideonmobile"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li class="menu-button" onclick="showsidebar()">
+                <i class="fa-solid fa-bars" style="color: white;"></i>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="video-wrapper">
+  <video id="aboutVideo" autoplay muted playsinline>
+    <source src="Nike Logo Animation _ Motion Graphics _ 2D Animation _ Motionalistic.mp4" type="video/mp4" />
+  </video>
+
+  <div id="overlayText">
+    <h1>Our Story</h1>
+    <p>Stepzy was born from a deep love for movement, design, and the relentless spirit of progress. Inspired by the legacy of Nike—where innovation meets performance—we set out to build a platform that celebrates quality, confidence, and everyday athletes. At Stepzy, we curate and sell premium footwear that reflects the same values of durability, style, and performance you trust in Nike products. Every step we take is guided by the belief that the right shoes don’t just complete an outfit—they empower ambition, fuel passion, and move you forward.</p>
+  </div>
+</div>
+
+
+     
+    <script src="script.js"></script>
+
+    <script>
+        
+
+  const video = document.getElementById("aboutVideo");
+  const text = document.getElementById("overlayText");
+  const nav = document.getElementById("mainNav");
+
+  video.addEventListener("ended", () => {
+    // Fade video to black
+    video.classList.add("fade-out");
+
+    // After fade, show text + navbar
+    setTimeout(() => {
+      text.classList.add("show");
+      nav.classList.add("show");
+    }, 900);
+  });
+
+
+
+
+    </script>
+</body>
+
+</html>

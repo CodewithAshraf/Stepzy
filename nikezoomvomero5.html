@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul class="sidebar" id="sidebar">
+            
+            
+            <li onclick="hidesidebar()"><i class="fa-solid fa-xmark" style="color: white;"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="#">SignUp</a></li>
+            <li ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul>
+        
+        <ul>
+            
+            
+            <li class="hideonmobile"><a href="#">Stepzy</a></li>
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="Aboutus.html">About</a></li>
+            <li class="hideonmobile"><a href="Products.html">Products</a></li>
+            <li class="hideonmobile"><a href="#">SignUp</a></li>
+                <li class="hideonmobile"><i class="fa-solid fa-bag-shopping"></i></li>
+            <li class="menu-button" onclick="showsidebar()">
+                <i class="fa-solid fa-bars" style="color: white;"></i></li>
+        </ul>
+        
+    </nav>
+
+    <div class="productcontainer">
+        <div class="imagebox">
+            <img class="Vomero" src="Assests/Images/Screenshot_2025-06-12_005600-removebg-preview.png" height="230"   alt="">
+        </div>
+        <div class="contentss">
+            <h1>NIKE Zoom Vomero 5</h1>
+                  <p class="para">Nike Zoom Vomero 5 combines futuristic <br> design with cutting-edge cushioning,<br> delivering bold style and all-day <br> comfort in every step.</p><br><br>
+            <h2>$400</h2>
+            
+           <div class="sizes">
+    <div class="allsizes" onclick="selectSize(this)"><p>40</p></div>
+    <div class="allsizes" onclick="selectSize(this)"><p>41</p></div>
+    <div class="allsizes" onclick="selectSize(this)"><p>42</p></div>
+    <div class="allsizes" onclick="selectSize(this)"><p>43</p></div>
+    <div class="allsizes" onclick="selectSize(this)"><p>44</p></div>
+    <div class="allsizes" onclick="selectSize(this)"><p>45</p></div>
+</div>
+
+<div class="buttonaddtocart">
+    <button onclick="addbtn()" class="btn">Add to Cart</button>
+</div>
+
+
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+     <script>
+            const currentProduct = {
+        name: "NIKE Zoom Vomero 5",
+        price: 400,
+        img: "Assests/Images/Screenshot_2025-06-12_005600-removebg-preview.png",
+        size: null   // updated when the user selects a size
+    };
+     </script>
+</body>
+</html> 

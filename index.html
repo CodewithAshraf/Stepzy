@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul class="sidebar" id="sidebar">
+            
+            
+            <li onclick="hidesidebar()"><i class="fa-solid fa-xmark" style="color: white;"></i></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <!-- <li><a href="cart.html">SignUp</a></li> -->
+             <li ><a href="cart.html"><i  class="fa-solid fa-bag-shopping"></i></a></li>
+        </ul>
+        
+        <ul>
+            
+            
+            <li class="hideonmobile"><a href="#">Stepzy</a></li>
+            <li class="hideonmobile"><a href="index.html">Home</a></li>
+            <li class="hideonmobile"><a href="Aboutus.html">About</a></li>
+            <li class="hideonmobile"><a href="Products.html">Products</a></li>
+            <!-- <li class="hideonmobile"><a href="#">SignUp</a></li> -->
+            <li class="hideonmobile"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li class="menu-button" onclick="showsidebar()">
+                <i class="fa-solid fa-bars" style="color: white;"></i></li>
+        </ul>
+        
+    </nav>
+    <section class="sec1">
+       <div class="image-container">
+        <div class="text">
+            <h2>NIKE AIR MAX<br> DN8</h2> 
+            <p>The Nike Air Max DN8 combines futuristic <br> design with cutting-edge cushioning,<br> delivering bold style and all-day <br> comfort in every step.</p>
+            <button class="btn"><a href="airmaxdn8.html">View</button></a>
+            </div>
+            <img class="image" src="Assests/Images/Screenshot_2025-06-04_153044-removebg-preview (1) 1.png" height="600" width="700" alt="">
+            
+            
+       </div>
+            
+    </section>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Nike's New Arrival</h1>
+        </div>
+        <div class="row">
+        
+            
+        </div>
+    </div>
+
+    <div class="bgimg">
+        
+    </div>
+    <div class="Testimonials">
+        <div class="header">
+            <h1>What Customer's Says</h1>
+        </div>
+        <div class="row2">
+            <div class="cards">
+                <div class="photo">
+                    <img src="Assests/Images/smiling-businessman-face-portrait-wearing-suit.jpg" height="100" alt=""/>
+                </div>
+                <div class="texts">
+                    <h3>Abraham</h3> <br>
+                    <p>"Comfort meets style. I’m definitely <br> ordering another pair soon!"</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="photo">
+                    <img src="Assests/Images/picture-serious-calm-female-with-pleasant-appearance.jpg" height="100" alt=""/>
+                </div>
+                <div class="texts">
+                    <h3>Skylar</h3> <br>
+                    <p>"Very happy with my purchase! <br> Fast delivery and the shoes <br> feel fantastic."</p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="photo">
+                    <img src="Assests/Images/business-man-by-skyscraper.jpg" height="100" alt=""/>
+                </div>
+                <div class="texts">
+                    <h3>Starc</h3> <br>
+                    <p>"Absolutely love these shoes!  <br> Super comfortable and stylish ."</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <footer>
+        <div class="content">
+            <h1>Subscribe to Our News Letter</h1>
+            <p>Be the first to know about new arrivals, exclusive offers, <br> and the latest sneaker trends — straight to your inbox.</p>
+            <button><a href="#">Subscribe</a></button>
+            
+        </div>
+       
+        
+    </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+
+const newarrivals =[
+    {
+        name:"Nike Zoom Vomero 5",
+        img:"Assests/Images/Screenshot_2025-06-12_005600-removebg-preview.png",
+        height:140,
+        url:"nikezoomvomero5.html"
+    },
+       {
+        name:"Luka 4 PF 'Navigator'",
+        img:"Assests/Images/image-removebg-preview.png",
+        height:145,
+         url:"luka4pf.html"
+    },
+       {
+        name:"JA 2 EP",
+        img:"Assests/Images/image-removebg-preview (1).png",
+        height:145,
+          url:"JA 2 EP.html"
+    },
+
+]
+
+const row = document.querySelector(".row");
+newarrivals.forEach(products=>{
+
+    const card =  document.createElement("div");
+    card.classList.add("card");
+      card.innerHTML = `
+        <img class="shoe1" src="${products.img}" height="${products.height}" alt="">
+        <h3>${products.name}</h3>
+          <a href="${products.url}">
+    <button class="cardbtn">View</button>
+  </a>
+    `;
+     row.appendChild(card);
+
+})
+    
+
+
+
+
+  </script>
+</body>
+</html>
