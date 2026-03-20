@@ -30,5 +30,5 @@ Stepzy is a modern and stylish shoe website designed with a clean blue and white
 ## 📂 Installation
 
 ```bash
-git clone https://github.com/your-username/stepzy.git
+git clone https://github.com/CodewithAshraf/stepzy.git
 cd stepzy
